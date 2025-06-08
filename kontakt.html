@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktformular</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        background-color: #333;
+        overflow: hidden;
+        justify-content: space-around;
+        border-radius: 9px;
+      }
+  
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+  
+      
+  
+      @media screen and (max-width: 600px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    h2 {
+      text-align: center;
+      color: #f1f1f1;
+      text-shadow:
+      0 0 2px #ffffff,
+      0 0 4px #ffffff,
+      0 0 6px #cccccc;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+      background-color: #2c2c2c;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #0a84ff;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005bb5;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .success-message {
+      color: #00ff99;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .error-message {
+      color: #ff4444;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Startseite</a>
+        <a href="anfang.html">Wie fange ich am besten an?</a>
+        <a href="trainingsplan.html">Trainingspläne</a>
+        <a href="ernaehrungsplan.html">Ernährungsplän</a>
+        <a href="buecher.html">Bücher</a>
+        <a href="about.html">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+
+  <div class="container" style="margin-top: 40px;">
+    <h2>Kontaktformular</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="DEIN-ZUGANGSSCHLÜSSEL-HIER">
+
+      <!-- Redirect optional -->
+      <input type="hidden" name="redirect" value="https://deine-domain.de/danke.html">
+
+      <!-- Optional: Bot Check -->
+      <input type="hidden" name="botcheck" value="">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefon">Telefonnummer (optional)</label>
+      <input type="tel" id="telefon" name="telefon">
+
+      <label for="betreff">Betreff</label>
+      <input type="text" id="betreff" name="subject" required>
+
+      <label for="anliegen">Art der Anfrage</label>
+      <select id="anliegen" name="anliegen" required>
+        <option value="">Bitte wählen...</option>
+        <option value="support">Support</option>
+        <option value="angebot">Angebot</option>
+        <option value="feedback">Feedback</option>
+      </select>
+
+      <label for="nachricht">Nachricht</label>
+      <textarea id="nachricht" name="message" rows="6" required></textarea>
+
+      <label for="datei">Datei anhängen (optional)</label>
+      <input type="file" id="datei" name="attachment">
+
+      <button type="submit">Absenden</button>
+    </form>
+  </div>
+
+</body>
+</html>

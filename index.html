@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: #000;
+            color: #FFF;
+        }       
+
+        .Überschrift{
+            text-align: center;
+            text-shadow:
+            0 0 2px #ffffff,
+            0 0 4px #ffffff,
+            0 0 6px #cccccc;
+        }
+
+        .textbox{
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+            overflow: hidden;
+            justify-content: space-around;
+            border-radius: 9px;
+          }
+      
+          .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+          }
+      
+          
+      
+          @media screen and (max-width: 600px) {
+            .navbar {
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+
+          .textbox-einführung{
+            top: 80px;
+            width: 500px;
+            margin-left: 30px;
+          }
+
+          .text-bild {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 50px;
+            gap: 30px;
+            flex-wrap: wrap;
+            flex-direction: row; /* Sicherstellen, dass Bild rechts ist */
+          }
+          
+          .pic-1 {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px #FFF;
+            margin: 0;
+          }          
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Startseite</a>
+        <a href="anfang.html">Wie fange ich am besten an?</a>
+        <a href="trainingsplan.html">Trainingspläne</a>
+        <a href="ernaehrungsplan.html">Ernährungsplän</a>
+        <a href="buecher.html">Bücher</a>
+        <a href="about.html">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+
+    <div class="textbox">
+    <h1 class="Überschrift">
+        Du möchtest mit Calisthenics beginnen? - Hier bist du richtig!
+    </h1>
+    </div>
+
+    <div class="text-bild">
+
+    <div class="textbox-einführung">
+    <h1>
+        Bei uns bekommst du:
+    </h1>
+    <h2>
+        * Ausgeprägte Trainings- und Ernährungspläne
+    </h2>
+    <h2>
+        * Die besten Übungen für dich und deinen Körper
+    </h2>
+    <h2>
+        * Erklärungen zu jeder der Übungen
+    </h2>
+    <h2>
+        * Die besten Bücherempfehlungen die man bekommen kann
+    </h2>
+    <h2>
+        * Und wir erklären die wie du am besten anfängst
+    </h2>
+</div>
+
+<img src="pic-1.jpg" class="pic-1">
+
+</div>
+
+</body>
+</html>
