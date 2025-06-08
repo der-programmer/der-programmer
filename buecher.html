@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ULTRA SKIBIDI GYATT RIZZ 9000</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #050505, #0d0d0d);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+      font-size: 3.5em;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: 0 0 30px #0ff, 0 0 60px #00f;
+      animation: flicker 2s infinite alternate;
+    }
+
+    .navbar {
+        display: flex;
+        background-color: #333;
+        overflow: hidden;
+        justify-content: space-around;
+        border-radius: 9px;
+      }
+  
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+  
+      
+  
+      @media screen and (max-width: 600px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+    @keyframes flicker {
+      0% { opacity: 1; text-shadow: 0 0 30px #0ff; }
+      100% { opacity: 0.95; text-shadow: 0 0 60px #00f; }
+    }
+
+    .shop-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      padding: 60px 40px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .book-box {
+      flex: 1 1 calc(50% - 40px); /* zwei nebeneinander mit Abstand */
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 9px;
+      backdrop-filter: blur(12px);
+      padding: 20px;
+      position: relative;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+      transition: 0.4s ease;
+      overflow: hidden;
+    }
+
+    .book-box::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0, 255, 255, 0.08), transparent 80%);
+      transform: rotate(45deg);
+      pointer-events: none;
+    }
+
+    .book-box:hover {
+      transform: scale(1.03) rotateX(2deg);
+      box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+    }
+
+    .book-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .book-box:hover img {
+      transform: scale(1.05);
+    }
+
+    .book-title {
+      font-size: 1.4em;
+      font-weight: 800;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+      margin-bottom: 5px;
+    }
+
+    .book-author {
+      color: #aaa;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+
+    .book-price {
+      font-size: 1.2em;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .buy-button {
+      background: #0ff;
+      color: #000;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+    }
+
+    .buy-button:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.08);
+      box-shadow: 0 0 25px #0ff;
+    }
+
+    @media (max-width: 768px) {
+      .book-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      header {
+        font-size: 2em;
+        padding: 40px 10px;
+      }
+
+      .buy-button {
+        width: 100%;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #0ff;
+      border-radius: 10px;
+    }
+
+    .txt-unten{
+        width: 560px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Startseite</a>
+        <a href="anfang.html">Wie fange ich am besten an?</a>
+        <a href="trainingsplan.html">Trainingspläne</a>
+        <a href="ernaehrungsplan.html">Ernährungsplän</a>
+        <a href="buecher.html">Bücher</a>
+        <a href="about.html">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+
+  <header>📚 Sigma Skibidi Buchladen</header>
+
+  <div class="shop-container">
+    <div class="book-box">
+      <img src="https://via.placeholder.com/300x400?text=Rizz+1" alt="Buch 1">
+      <div class="book-title">Sigma Mindset</div>
+      <div class="book-author">by Alpha Ghost</div>
+      <div class="book-price">19,99 €</div>
+      <a href="https://www.nolur.com">Kaufen</a>
+    </div>
+
+    <div class="book-box">
+      <img src="https://via.placeholder.com/300x400?text=Rizz+2" alt="Buch 2">
+      <div class="book-title">Skibidi Soul</div>
+      <div class="book-author">by DJ Toilethead</div>
+      <div class="book-price">14,99 €</div>
+      <button class="buy-button">Kaufen</button>
+    </div>
+
+    <div class="book-box">
+      <img src="https://via.placeholder.com/300x400?text=Rizz+3" alt="Buch 3">
+      <div class="book-title">Ultra GYATT RIZZ</div>
+      <div class="book-author">by Giga Drip</div>
+      <div class="book-price">24,00 €</div>
+      <button class="buy-button">Kaufen</button>
+    </div>
+
+    <div class="book-box">
+      <img src="https://via.placeholder.com/300x400?text=Rizz+4" alt="Buch 4">
+      <div class="book-title">Dark Rizz Bible</div>
+      <div class="book-author">by Unknown AI</div>
+      <div class="book-price">66,66 €</div>
+      <button class="buy-button">Kaufen</button>
+    </div>
+  </div>
+
+  <h3 class="txt-unten">
+    Falls sie auch ihr Buch bei uns bewerben möchten können sie uns gerne über unser <a href="kontakt.html" style="color: #FFF;">Kontaktformular</a> anschreiben.
+  </h3>
+
+</body>
+</html>

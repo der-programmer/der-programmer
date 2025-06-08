@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+  <title>Calisthenics - Trainingsplan</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --header-bg: #1f1f1f;
+      --text-color: #e0e0e0;
+      --text-secondary: #bbbbbb;
+      --accent-color: #03DAC6;
+      --card-bg: #1e1e1e;
+      --link-color: #03DAC6;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: var(--header-bg);
+      padding: 10px 20px;
+    }
+    .navbar {
+      display: flex;
+      background-color: #333;
+      overflow: hidden;
+      justify-content: space-around;
+      border-radius: 9px;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    
+
+    @media screen and (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    h1{
+      margin-bottom: 10px;
+      color: var(--text-color);
+      text-align: center;
+      text-shadow:
+      0 0 2px #ffffff,
+      0 0 4px #ffffff,
+      0 0 6px #cccccc;
+    }
+    h2, h3 {
+      margin-bottom: 10px;
+      color: var(--text-color);
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid var(--text-secondary);
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: var(--header-bg);
+      color: var(--text-color);
+    }
+    footer {
+      background-color: var(--header-bg);
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      color: var(--text-secondary);
+    }
+    a {
+      color: var(--link-color);
+    }
+    a:hover {
+      color: var(--accent-color);
+    }
+
+    .button-container {
+      text-align: center; /* Zentriert den Button */
+      margin: 40px 0;     /* Abstand oben und unten */
+    }
+    
+    .clean-button {
+      display: inline-block;
+      padding: 7px 16px;
+      background-color: #000000;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .clean-button:hover {
+      background-color: #1669c1;
+      transform: translateY(-2px);
+    }
+    
+    .clean-button:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="index.html">Startseite</a>
+      <a href="anfang.html">Wie fange ich am besten an?</a>
+      <a href="trainingsplan.html">Trainingspläne</a>
+      <a href="ernaehrungsplan.html">Ernährungsplän</a>
+      <a href="buecher.html">Bücher</a>
+      <a href="about.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </header>
+  <main>
+    <h1 style="margin-top: 90px;">Trainingsplan für Beginner</h1>
+    <p style="margin-top: 20px;">Ein ausgewogener Trainingsplan sorgt für effektiven Muskelaufbau und Fortschritt im Calisthenics. Ein Beispiel für eine 3-Tage-Woche könnte wie folgt aussehen:</p>
+    <table style="margin-top: 30px;">
+      <tr><th>Wochentag</th><th>Übung</th><th>Sätze x Wiederholungen</th></tr>
+      <tr><td>Montag</td><td>Liegestütze</td><td>3 x 10</td></tr>
+      <tr><td></td><td>Klimmzüge</td><td>3 x 8</td></tr>
+      <tr><td></td><td>Kniebeugen (Squats)</td><td>3 x 15</td></tr>
+      <tr><td>Mittwoch</td><td>Dips</td><td>3 x 8</td></tr>
+      <tr><td></td><td>Plank (Unterarmstütz)</td><td>3 x 60 Sek.</td></tr>
+      <tr><td></td><td>Ausfallschritte</td><td>3 x 12 pro Bein</td></tr>
+      <tr><td>Freitag</td><td>Klimmzüge (weiter Griff)</td><td>3 x 8</td></tr>
+      <tr><td></td><td>Liegestütze (enge Hände)</td><td>3 x 10</td></tr>
+      <tr><td></td><td>Beinheben</td><td>3 x 12</td></tr>
+    </table>
+    <p style="margin-top: 50px;">Wichtig ist dass man zu dem Training auch auf seine <a href="ernaehrungsplan.html">Ernährung</a> achtet. Falls du die Übungen nicht kennst oder eine genaue anleitung haben möchtest, 
+        kannst du unter diesem Text in die Liste schauen und wirst über eien Link direkt zu einer Erklärung/Anleitung weitergeleitet.</p>
+
+        <h2 style="margin-top: 50px;">Erklärungen für die Übungen:</h2>
+
+<div align="center" class="button-container" style="width: 1000;">
+  <a href="https://youtu.be/JvX0ilRCBrU?si=eSMvodEX-OhiujbV" class="clean-button">Liegestütze</a>
+  <a href="https://youtu.be/Fo93XyyqGhQ?si=7UPDTtFEjayvpFJI" class="clean-button">Klimmzüge</a>
+  <a href="https://youtu.be/98piTWl-7gs?si=0Ozn-ZyMlSX10BJU" class="clean-button">Kniebeuge</a>
+  <a href="https://youtu.be/ww-YiaQd5Iw?si=i84v-JNP7IFvKrh0" class="clean-button">Dips</a>
+  <a href="https://youtu.be/HjzrTRYfOtc?si=NHIJ_a0PiwYwz4wX" class="clean-button">Plank</a>
+  <a href="https://youtu.be/653fdICLDYo?si=eixvECb4TNEcuG8R" class="clean-button">Ausfallschritte</a>
+  <a href="https://youtu.be/59Xn9ZrDpSI?si=20hb-JUx0TXawspf" class="clean-button">Beinheben</a>
+</div>
+
+<h1 style="margin-top: 90px;">Trainingsplan für fortgeschrittene</h1>
+    <p style="margin-top: 20px;">Ein ausgewogener Trainingsplan sorgt für effektiven Muskelaufbau und Fortschritt im Calisthenics. Ein Beispiel für eine 3-Tage-Woche könnte wie folgt aussehen:</p>
+    <!--Übungen durch fortgeschrittene ersetzen-->
+    <table style="margin-top: 30px;">
+      <tr><th>Wochentag</th><th>Übung</th><th>Sätze x Wiederholungen</th></tr>
+      <tr><td>Montag</td><td>Liegestütze</td><td>3 x 10</td></tr>
+      <tr><td></td><td>Muscle-up</td><td>3 x 8</td></tr>
+      <tr><td></td><td>Kniebeugen (Squats)</td><td>3 x 15</td></tr>
+      <tr><td></td><td>planche</td><td>einfach so lange wie möglich</td></tr>
+      <tr><td>Mittwoch</td><td>Dips</td><td>3 x 8</td></tr>
+      <tr><td></td><td>Plank (Unterarmstütz)</td><td>3 x 60 Sek.</td></tr>
+      <tr><td></td><td>Klimmzüge</td><td>3 x 12 pro Bein</td></tr>
+      <tr><td>Freitag</td><td>Muscle-up</td><td>3 x 5</td></tr>
+      <tr><td></td><td>Diamond push-ups</td><td>4 x 15</td></tr>
+      <tr><td></td><td>Sit-ups</td><td>4 x 11</td></tr>
+    </table>
+
+    <h2>Erklärungen der Übungen:</h2>
+
+    <div align="center" class="button-container" style="width: 1000px;">
+      <a href="https://youtu.be/JvX0ilRCBrU?si=eSMvodEX-OhiujbV" class="clean-button">Push-ups</a>
+      <a href="https://youtu.be/_eQ2gw_Gg5Y?feature=shared" class="clean-button">Muscle-up</a>
+      <a href="https://youtu.be/98piTWl-7gs?si=0Ozn-ZyMlSX10BJU" class="clean-button">Squat</a>
+      <a href="https://youtu.be/0cMXdZL9ESA?feature=shared" class="clean-button">Planche</a>
+      <a href="https://youtu.be/ww-YiaQd5Iw?si=i84v-JNP7IFvKrh0" class="clean-button">Dips</a>
+      <a href="https://youtu.be/HjzrTRYfOtc?si=NHIJ_a0PiwYwz4wX" class="clean-button">Plank</a>
+      <a href="https://youtu.be/Fo93XyyqGhQ?si=7UPDTtFEjayvpFJI" class="clean-button">Pull-ups</a>
+      <a href="https://youtu.be/kGhDnFwMY3E?feature=shared" class="clean-button">Diamand Push-ups</a>
+      <a href="https://youtu.be/s3PPU_2z9qo?feature=shared" class="clean-button">Sit-ups</a>
+    </div>
+    </main>
+    </body>
+    </html>
